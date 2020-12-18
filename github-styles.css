@@ -26,15 +26,25 @@ p {
 }
 
 a {
-    color: rgb(255, 244, 91);
+    color: rgb(255, 221, 157);
     text-decoration: none;
     font-weight: bold;
 }
 
 a:visited {
-    color: rgb(0, 178, 190);
+    color: rgb(255, 172, 47);
 }
 
 a:hover {
     color: rgb(0, 2, 2);
+}
+
+#projektit {
+    height: 230px;
+}
+
+footer {
+    text-align: center;
+    padding: 3px;
+    background-color: rgb(15, 15, 15);
 }
