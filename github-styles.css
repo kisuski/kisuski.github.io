@@ -3,6 +3,7 @@ body {
     background-image: url("https://cdn.pixabay.com/photo/2019/04/17/12/37/black-cat-is-curious-4134140_1280.png");
     background-repeat: no-repeat;
     background-size: 250px;
+    float: left;
 }
 
 h1 {
