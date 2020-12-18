@@ -1,9 +1,9 @@
 body {
-    background-color: rgb(10, 10, 10);
+    background-color: rgb(0, 0, 0);
     background-image: url("https://cdn.pixabay.com/photo/2019/04/17/12/37/black-cat-is-curious-4134140_1280.png");
     background-repeat: no-repeat;
     background-size: 250px;
-    height: 50px;
+    height: 80px;
 }
 
 h1 {
