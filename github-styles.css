@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(0, 2, 2);
+    background-color: rgb(255, 249, 251);
     background-image: url("https://cdn.pixabay.com/photo/2019/04/17/12/37/black-cat-is-curious-4134140_1280.png");
     background-repeat: no-repeat;
     background-size: 250px;
@@ -7,7 +7,7 @@ body {
 }
 
 h1 {
-    color: rgb(248, 248, 248);
+    color: rgb(41, 41, 41);
     text-align: center;
     font-family: Calibri;
     font-style: italic;
@@ -16,9 +16,10 @@ h1 {
 }
 
 p {
-    color: rgb(243, 243, 243);
+    color: rgb(65, 65, 65);
     text-align: center;
-    font-family: Arial;
+    font-family: Verdana;
+    font-size: 90%;
 }
 
 #alkuteksti {
@@ -26,17 +27,17 @@ p {
 }
 
 a {
-    color: rgb(243, 243, 243);
+    color: rgb(65, 65, 65);
     text-decoration: none;
     font-weight: bold;
 }
 
 a:visited {
-    color: rgb(228, 228, 228);
+    color: rgb(65, 65, 65);
 }
 
 a:hover {
-    color: rgb(0, 2, 2);
+    color: rgb(255, 249, 251);
 }
 
 #projektit {
@@ -46,5 +47,5 @@ a:hover {
 footer {
     text-align: center;
     padding: 3px;
-    background-color: rgb(0, 2, 2);
+    background-color: rgb(253, 232, 239);
 }
