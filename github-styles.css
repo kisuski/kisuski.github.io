@@ -2,14 +2,14 @@ body {
     background-color: rgb(255, 249, 251);
     background-image: url("https://cdn.pixabay.com/photo/2019/04/17/12/37/black-cat-is-curious-4134140_1280.png");
     background-repeat: no-repeat;
-    background-size: 250px;
+    background-size: 200px;
 
 }
 
 h1 {
     color: rgb(41, 41, 41);
     text-align: center;
-    font-family: Calibri;
+    font-family:'Segoe UI';
     font-style: italic;
     padding: 25px;
     height: 130px;
