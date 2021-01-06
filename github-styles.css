@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(255, 249, 251);
     background-image: url("https://cdn.pixabay.com/photo/2019/04/17/12/37/black-cat-is-curious-4134140_1280.png");
     background-repeat: no-repeat;
     background-size: 200px;
@@ -37,7 +37,7 @@ a:visited {
 }
 
 a:hover {
-    color: rgb(255, 255, 255);
+    color: rgb(255, 249, 251);
 }
 
 #projektit {
