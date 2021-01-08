@@ -14,6 +14,13 @@ h1 {
     padding: 40px;
 }
 
+h3 {
+    color: rgb(41, 41, 41);
+    text-align: center;
+    font-family:'Segoe UI';
+    height: 40px;
+}
+
 p {
     color: rgb(65, 65, 65);
     text-align: center;
@@ -41,6 +48,11 @@ a:hover {
 
 #projektit {
     height: 230px;
+}
+
+#etusivunappula {
+
+    margin-top: 200px;
 }
 
 footer {
