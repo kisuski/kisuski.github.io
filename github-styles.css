@@ -1,8 +1,8 @@
 body {
     background-color: rgb(255, 249, 251);
-    background-image: url("https://cdn.pixabay.com/photo/2019/04/17/12/37/black-cat-is-curious-4134140_1280.png");
+    background-image: url("https://raw.githubusercontent.com/kisuski/kisuski.github.io/main/media/black-cat-is-curious-4134140_1280111.png");
     background-repeat: no-repeat;
-    background-size: 200px;
+    background-size: 135px;
 
 }
 
@@ -11,8 +11,7 @@ h1 {
     text-align: center;
     font-family:'Segoe UI';
     font-style: italic;
-    padding: 25px;
-    height: 130px;
+    padding: 40px;
 }
 
 p {
