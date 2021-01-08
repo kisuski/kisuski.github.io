@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Alla muotoilut lomakkeelle-->
+    <style>
+        h1 {
+            font-family: Arial;
+            font-style: italic;
+            text-align: center;
+        }
+        form {
+            background-color: rgb(235, 231, 186);
+        }
+        
+        label {
+            font-family: Verdana;
+            color: rgb(70, 70, 70);
+        }
+
+        #nappi1 {
+            background-color: rgb(186, 213, 235);
+            border: 2px solid black;
+        }
+
+        #nappi2 {
+            background-color: rgb(186, 213, 235);
+            border: 2px solid black;
+        }
+
+        legend {
+            font-family: Verdana;
+            color: rgb(19, 19, 19);
+        }
+    </style>
+    <title>Lomake</title>
+</head>
+<body>
+<!--Sivun otsikko alapuolella-->
+    <h1>Lomakeharjoitus</h1>
+
+<!--Henkilötietojen lomakeosio-->
+    <form id="form1" method="post" action="http://finnberg.net/post.php">
+            <fieldset>
+                <legend>Henkilötiedot</legend>
+                <label for="nimialue">Nimi</label>
+            <input id="nimialue" type="text" name="nimi" value="Etunimi Sukunimi">
+            <br>
+            <label for="passwd">Salasana</label>
+            <input id="passwd" type="password" name="salasana" value="*************">
+        </fieldset>
+        
+<!--Tässä on rastitettava lomakeosio-->
+        <input type="checkbox" id="ehdot" name="ehdot" value="kylla">
+<label for="suora">Hyväksyn ehdot</label><br>
+
+<input type="checkbox" id="mainos" name="mainos" value="kylla">
+<label for="kirje">Haluan saada mainoksia</label>
+
+<!--Tässä on kohta, josta voi valita vain yhden vaihtoehdon-->
+<p><input type="radio" id="asuhel" name="asuinpaikka" value="Helsinki">
+<label for="asuhel">Helsinki</label><br>
+
+<input type="radio" id="asujyv" name="asuinpaikka" value="Jyväskylä">
+<label for="asujyv">Jyväskylä</label><br> 
+
+<input type="radio" id="asusom" name="asuinpaikka" value="Somero">
+<label for="asusom">Somero</label><br>
+
+<input type="radio" id="asumuu" name="asuinpaikka" value="muu">
+<label for="asumuu">Muu</label></p>
+
+<!--Lempivärin valinta-->
+<p><label for="favcolor">Valitse suosikkivärisi:</label>
+    <input type="color" id="lempiväri" name="lempiväri" value="#ff0000"></p>
+
+<!--Tässä joko palautat lomakkeen tai tyhjennät valinnat-->
+<p><input id="nappi1" type="submit" name="Submit" value="Palauta">
+    <input id="nappi2" type="reset" name="Submit2" value="Tyhjennys"></p>
+    </form>
+</body>
+</html>
