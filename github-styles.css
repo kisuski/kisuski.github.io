@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(255, 249, 251);
+    background-color: rgb(240, 240, 240);
     background-image: url("https://raw.githubusercontent.com/kisuski/kisuski.github.io/main/media/black-cat-is-curious-4134140_1280111.png");
     background-repeat: no-repeat;
     background-size: 135px;
@@ -36,7 +36,7 @@ a:visited {
 }
 
 a:hover {
-    color: rgb(255, 249, 251);
+    color: rgb(240, 240, 240);
 }
 
 #projektit {
@@ -46,5 +46,5 @@ a:hover {
 footer {
     text-align: center;
     padding: 3px;
-    background-color: rgb(255, 238, 243);
+    background-color: rgb(233, 233, 233);
 }
