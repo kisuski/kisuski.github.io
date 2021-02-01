@@ -72,15 +72,17 @@ p {
 p.esittely {
     margin-left: auto;
     margin-right: auto;
-    width: 65%;
-    padding-top: 70px;
+    width: 70%;
+    padding-top: 50px;
+    padding-bottom: 150px;
 }
 
 .projektilista {
     margin-left: auto;
     margin-right: auto;
-    width: 65%;
-    padding-top: 70px;
+    width: 70%;
+    padding-top: 50px;
+    padding-bottom: 150px;
 }
 
 a {
