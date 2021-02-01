@@ -44,16 +44,6 @@ h1 {
   .navbar a.active {
     background-color: #C3C9E9;
   }
-  
-  /* Responsiivisuus - jos näytöillä vähemmän kuin 500px leveyttä, linkit näkyy toistensa päällä eivätkä vierekkäin */
-  @media screen and (max-width: 500px) {
-    .navbar a {
-      float: none;
-      display: block;
-      width: 100%;
-      text-align: left; /* teksti lähtee vasemmalta pienillä näytöillä */
-    }
-  }
 
 h3 {
     color: #23292E;
