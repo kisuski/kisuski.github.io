@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(240, 240, 240);
+    background-color: #C3C9E9;
     background-image: url("https://raw.githubusercontent.com/kisuski/kisuski.github.io/main/media/black-cat-is-curious-4134140_1280111.png");
     background-repeat: no-repeat;
     background-size: 135px;
@@ -7,52 +7,94 @@ body {
 }
 
 h1 {
-    color: rgb(41, 41, 41);
+    color: #23292E;
     text-align: center;
     font-family:'Forte';
-    font-size: 350%;
+    font-size: 300%;
     padding: 40px;
 }
 
+* {box-sizing: border-box}
+
+/* Navigointi-menun tyyli */
+.navbar {
+    width: 100%;
+    background-color:#C3C9E9;
+    overflow: auto;
+  }
+  
+  /* Navigaatio linkit */
+  .navbar a {
+    float: left;
+    padding: 12px;
+    color: #23292E;
+    text-decoration: none;
+    font-family: Verdana;
+    font-size: 16px;
+    width: 33.33%; /* Tämä tarkoittaa sitä, että linkkien välit ovat samat. Jos kaksi linkkiä, käytä 50%, 33.33% kolmelle linkille jne... */
+    text-align: center; /* Keskitetty teksti */
+  }
+  
+  /* Taustaväri kun hiiri on yllä */
+  .navbar a:hover {
+    background-color: #C3C9E9;
+  }
+  
+  /* Aktiivisen linkin tyyli */
+  .navbar a.active {
+    background-color: #C3C9E9;
+  }
+  
+  /* Responsiivisuus - jos näytöillä vähemmän kuin 500px leveyttä, linkit näkyy toistensa päällä eivätkä vierekkäin */
+  @media screen and (max-width: 500px) {
+    .navbar a {
+      float: none;
+      display: block;
+      width: 100%;
+      text-align: left; /* teksti lähtee vasemmalta pienillä näytöillä */
+    }
+  }
+
 h3 {
-    color: rgb(41, 41, 41);
+    color: #23292E;
     text-align: center;
     font-family:'Segoe UI';
     height: 40px;
 }
 
 p {
-    color: rgb(65, 65, 65);
+    color: #23292E;
     text-align: center;
     font-family: Verdana;
     font-size: 100%;
 }
 
-#alkuteksti {
-    height: 150px;
+p.esittely {
+    margin-left: auto;
+    margin-right: auto;
+    width: 40em;
+    padding-top: 70px;
+}
+
+.projektilista {
+    margin-left: auto;
+    margin-right: auto;
+    width: 40em;
+    padding-top: 70px;
 }
 
 a {
-    color: rgb(65, 65, 65);
+    color: #23292E;
     text-decoration: none;
     font-weight: bold;
 }
 
 a:visited {
-    color: rgb(65, 65, 65);
+    color: #23292E;
 }
 
 a:hover {
-    color: rgb(240, 240, 240);
-}
-
-#projektit {
-    height: 230px;
-}
-
-#etusivunappula {
-
-    margin-top: 200px;
+    color: #C3C9E9;
 }
 
 .footer {
@@ -60,6 +102,18 @@ a:hover {
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: rgb(233, 233, 233);
+    background-color: #6C91C2;
     text-align: center;
+ }
+
+ .footer a {
+    color: #23292E;
+ }
+
+ .footer a:hover {
+    color: #6C91C2;
+ }
+
+ #yhteystiedot {
+    color: #23292E;
  }
