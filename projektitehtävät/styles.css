@@ -23,7 +23,7 @@ body {
     font-weight: normal;
     font-style: normal; */
     background-color: rgb(239, 241, 243);
-    background-image: url('../images/bg_full_size.jpg'); /* ../ palaa hakemistorakenteessa yhden pykälän taaksepäin */
+    background-image: url(media/bg_full_size.jpg'); /* ../ palaa hakemistorakenteessa yhden pykälän taaksepäin */
     background-repeat: no-repeat;
     background-position: top left;
     background-attachment: fixed; /* vaikka sisältöä scrollaa niin taustakuva pysyy paikoillaan tämän komennon avulla */
@@ -203,7 +203,7 @@ button:hover {
 }
 
 #logo {
-    background-image: url('../images/logo.png'); /* logoissa käytetään yleisesti svg-tiedostotyyppiä */
+    background-image: url('media/logo.png'); /* logoissa käytetään yleisesti svg-tiedostotyyppiä */
     display: block;
     width: 286px; /* leveys laitettu samaksi kuin kuvatiedoston leveys */
     height: 60px; /* korkeus laitettu samaksi kuin kuvatiedoston korkeus */
