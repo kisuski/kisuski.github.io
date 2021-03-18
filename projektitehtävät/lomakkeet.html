@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fi">
+    <head>
+        <meta charset="UTF-8">
+        <title>Lomakkeet - Harjoitussivu</title>
+        <!-- esim. media="all" käytetään kaikissa medioissa kun taas media="print" vaikuttaa vain printtaamiseen-->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+
+        <!-- Laitetaan koko body containerin sisään, jotta CSS-tiedostossa voidaan muokata koko bodyn tyyliä containerin avulla -->
+        <div class="container">
+            <header>
+
+                <a href="index.html" id="logo">Docendo Discimus</a> <!-- Logolle -->
+
+                <!-- Navigointi, yleensä unordered list, CSS-tiedostossa määritellään tyylit navigointikentälle -->
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Etusivu</a></li>
+                        <li><a href="kuvat.html">Kuvat</a></li>
+                        <li><a href="taulukot.html">Taulukot</a></li>
+                        <li><a href="lomakkeet.html">Lomakkeet</a></li>
+                        <li><a href="videot.html">Videot</a></li>
+                    </ul>
+                </nav>
+            </header>   
+            
+            <!-- Esim. kuvan atribuutti
+            <img id="munKuva" (id-elementti auttaa esim. siinä, kun JS tai CSS halutaan editoida tiettyä osaa) src="munkuva.jpg" alt="Mun kuva"> -->
+
+            <main>
+                
+                <h1>Lomakkeet</h1>
+
+                <p>Tässä kokeillaan vähän lomakkeen tekemistä.</p>
+
+                <form action="my-post-script.php" method="POST"> <!-- action määrittää mihin lomakkeen tiedot lähetetään, methodiin post -->
+
+                    <fieldset>
+
+                        <legend>Yhteystiedot</legend> <!-- Fieldsetin otsikko -->
+
+                        <p>
+                            <label for="firstName">* Etunimi</label><br>
+                            <input type="text" id="firstName" name="Etunimi" placeholder="" required>
+                        </p> <!-- for="" samannimiseksi kuin id="", jotta koodi osaa yhdistää ne toisiinsa. Vapaamuotoinen nimi tiedolle, esim. kun sähköpostiin tulee viesti vastatusta lomakkeesta niin siinä lukee esim Etunimi: Sanna -->
+
+                        <p>
+                            <label for="lastName">* Sukunimi</label><br>
+                            <input type="text" id="lastName" name="Sukunimi" placeholder="" required>
+                        </p>
+
+                        <p>
+                            <label for="address">Lähiosoite</label><br>
+                            <input type="text" id="address" name="Lähiosoite" placeholder="">
+                        </p>
+
+                        <p>
+                            <label for="postalCode">Postinumero</label><br>
+                            <input type="text" id="postalCode" name="Postinumero" minlength="5" maxlength="5" placeholder="">
+                        </p>
+
+                        <p>
+                            <label for="postOffice">Postitoimipaikka</label><br>
+                            <input type="text" id="postOffice" name="Postitoimipaikka" placeholder="">
+                        </p>
+
+                        <p>
+                            <label for="email">* Sähköposti</label><br>
+                            <input type="email" id="email" name="Sähköposti" placeholder="joku@esimerkki.com" required> <!-- sähköpostille oma type email -->
+                        </p>
+
+                        <p>
+                            <label for="tel">Puhelin</label><br>
+                            <input type="tel" id="tel" name="Puhelin" placeholder=""> <!-- puhelinnumerolle oma type tel -->
+                        </p>
+                    </fieldset>
+
+                    <p>
+                        <label for="message">Viesti</label><br>
+                        <textarea id="message" name="Viesti" rows="5" cols="50"></textarea> <!-- Vapaa viestikenttä lomakkeelle -->
+                    </p>
+
+                    <p>
+                        <input type="radio" id="female" name="Sukupuoli" value="Nainen" checked> <!-- checked = valmiiksi valittu -->
+                        <label for="female">Nainen</label>
+                        <br>
+                        <input type="radio" id="male" name="Sukupuoli" value="Mies">
+                        <label for="male">Mies</label>
+                        <br>
+                        <input type="radio" id="other" name="Sukupuoli" value="Muu">
+                        <label for="other">Muu</label>
+                    </p>
+
+                    <p>
+                        <label for="contact">Ottakaa minuun yhteyttä</label><br>
+                        <select id="contact" name="yhteys" required>
+                            <option value="">Valitse yhteydenottotapa</option>
+                            <option value="puhelin">puhelimella</option>
+                            <option value="sähköposti" selected>sähköpostilla</option> <!-- selected tekee sen, että kyseinen vaihtoehto on valittuna valmiiksi oletuksena -->
+                            <option value="savumerkeillä">savumerkeillä</option>
+                            <option value="ei">älkää ottako minuun yhteyttä</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <input type="checkbox" id="terms" name="Ehdot" value="Hyväksytty" required>
+                        <label for="terms">Olen lukenut ja hyväksyn tilaus- ja käyttöehdot.</label>
+                    </p>
+
+                    <p>
+                        <button type="submit">Lähetä</button>
+                    </p>
+                </form>
+
+            </main>
+
+            <footer>
+                <!-- &copy; luo Copyright-merkin -->
+                &copy; 2021 Susanna M
+            </footer>
+        </div> <!-- /.container -->
+    </body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fi">
+    <head>
+        <meta charset="UTF-8">
+        <title>Videot - Harjoitussivu</title>
+        <!-- esim. media="all" käytetään kaikissa medioissa kun taas media="print" vaikuttaa vain printtaamiseen-->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+
+        <!-- Laitetaan koko body containerin sisään, jotta CSS-tiedostossa voidaan muokata koko bodyn tyyliä containerin avulla -->
+        <div class="container">
+            <header>
+
+                <a href="index.html" id="logo">Docendo Discimus</a> <!-- Logolle -->
+
+                <!-- Navigointi, yleensä unordered list, CSS-tiedostossa määritellään tyylit navigointikentälle -->
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Etusivu</a></li>
+                        <li><a href="kuvat.html">Kuvat</a></li>
+                        <li><a href="taulukot.html">Taulukot</a></li>
+                        <li><a href="lomakkeet.html">Lomakkeet</a></li>
+                        <li><a href="videot.html">Videot</a></li>
+                    </ul>
+                </nav>
+            </header>   
+            
+            <!-- Esim. kuvan atribuutti
+            <img id="munKuva" (id-elementti auttaa esim. siinä, kun JS tai CSS halutaan editoida tiettyä osaa) src="munkuva.jpg" alt="Mun kuva"> -->
+
+            <main>
+                
+                <h1>Videot</h1>
+
+                <p>Tässä kokeillaan vähän videoiden käyttöä.</p>
+
+                <!-- <video src="videos/transformers.mp4" width="640" height="272" controls></video> -->
+                
+                <!-- <video width="640" height="272" controls> controls attribuutti lisää näkyviin play-nappulan jne
+                    <source src="videos/transformers.mp4" type="video/mp4">
+                    <source src="videos/transformers.ogg" type="video/ogg">
+                </video> -->
+
+                <h2>YouTube-video</h2>
+
+                <iframe src="https://www.youtube.com/embed/31HfP81oWDI" class="iframe-video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                <h2>Vimeo-video</h2>
+
+                <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/371426411?title=0&byline=0&portrait=0" class="iframe-video-vimeo" style="position:absolute;top:0;left:0;width:100%;height:100%;" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+
+            </main>
+
+            <footer>
+                <!-- &copy; luo Copyright-merkin -->
+                &copy; 2021 Susanna M
+            </footer>
+        </div> <!-- /.container -->
+    </body>
+</html>

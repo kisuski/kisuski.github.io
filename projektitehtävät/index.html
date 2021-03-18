@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fi">
+    <head>
+        <meta charset="UTF-8">
+        <title>Etusivu - Harjoitussivu</title>
+        <!-- esim. media="all" käytetään kaikissa medioissa kun taas media="print" vaikuttaa vain printtaamiseen-->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+
+        <!-- Laitetaan koko body containerin sisään, jotta CSS-tiedostossa voidaan muokata koko bodyn tyyliä containerin avulla -->
+        <div class="container">
+            <header>
+
+                <a href="index.html" id="logo">Docendo Discimus</a> <!-- Logolle -->
+
+                <!-- Navigointi, yleensä unordered list, CSS-tiedostossa määritellään tyylit navigointikentälle -->
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Etusivu</a></li>
+                        <li><a href="kuvat.html">Kuvat</a></li>
+                        <li><a href="taulukot.html">Taulukot</a></li>
+                        <li><a href="lomakkeet.html">Lomakkeet</a></li>
+                        <li><a href="videot.html">Videot</a></li>
+                    </ul>
+                </nav>
+            </header>   
+
+            <!-- Omenan atribuutti on herkullinen ja koostumus
+            <omena maku="herkullinen" koostumus="kiinteä"></omena>
+            <omena id="munOmena"></omena> -->
+
+            <!-- Esim. kuvan atribuutti
+            <img id="munKuva" (id-elementti auttaa esim. siinä, kun JS tai CSS halutaan editoida tiettyä osaa) src="munkuva.jpg" alt="Mun kuva"> -->
+
+            <main>
+
+                <div class="flex-container">
+
+                    <div class="col-left"> <!-- tämä sijoittuu sivun vasemmalle puolelle -->
+
+                        <h1>Harjoitussivu</h1>
+
+                        <!-- target="_blank" tekee sen, että linkki avautuu uuteen välilehteen/ikkunaan -->
+                        <p>Tässä on tekstikappale. Tässä on <a href="https://www.taitotalo.fi" target="_blank">linkki</a>.</p>
+
+                        <!-- Lihavointiin käytä elementtiä strong, ei b. B on vanhentunut elementti -->
+                        <p>Tässä on toinen tekstikappale.Tämä teksti on <strong>lihavoitu</strong>. Tässä on vähän <em>kursivoitua</em> tekstiä.</p>
+
+                        <!-- Lopeta aina se elementti ensin, minkä viimeiseksi aloitit -->
+                        <p><strong><em>Tämä teksti on sekä lihavoitu että kursivoitu.</em></strong></p>
+
+                    </div>
+
+                    <div class="col-right"> <!-- tulee sijoittumaan sivun oikealle puolelle -->
+
+                        <h2>Numeroitu lista</h2>
+
+                        <!-- ol = ordered list, li= list item -->
+                        <ol>
+                            <li>Pentti Hirvonen</li>
+                            <li>Olli Kujala</li>
+                            <li>Pasi Kuikka</li>
+                        </ol>
+
+                        <h2>Numeroimaton lista</h2>
+
+                        <!-- ul = unordered list -->
+                        <ul>
+                            <li>Kahvia</li>
+                            <li>Viiniä</li>
+                            <li>Hedelmiä</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </main>
+
+            <footer>
+                <!-- &copy; luo Copyright-merkin -->
+                &copy; 2021 Susanna M
+            </footer>
+        </div> <!-- /.container -->
+    </body>
+</html>

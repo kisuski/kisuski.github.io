@@ -1,0 +1,214 @@
+/*
+p {
+    color: rgb(160, 0, 27);
+    background-color: rgb(223, 223, 223);
+    Jos määräksi laittaa 0 niin yksikköä ei tarvitse lisätä
+    padding: 20px;
+    Borderiin voidaan määrittää kaikki kolme ominaisuutta samalle riville, koko, solid/dashed/jne. ja väri
+    border: 2px dashed rgb(22, 22, 22);
+    margin: 50px;
+}
+*/
+
+* /* universaalivalitsin, eli valitsee kaiken */ {
+    box-sizing: border-box;
+}
+
+body {
+    /* Jos fontin nimessä on välilyöntejä, niin laita fonttinimi lainausmerkkeihin */
+    font-family: 'Montserrat', sans-serif;
+    /* rem-yksikkö on yleisesti käytetty fonttikokoihin (1rem=16px, 2rem=32px)
+    font-size: 18px;
+    Älä merkitse font-weightiä tai font-styleä jos arvo on normal
+    font-weight: normal;
+    font-style: normal; */
+    background-color: rgb(239, 241, 243);
+    background-image: url('../images/bg_full_size.jpg'); /* ../ palaa hakemistorakenteessa yhden pykälän taaksepäin */
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-attachment: fixed; /* vaikka sisältöä scrollaa niin taustakuva pysyy paikoillaan tämän komennon avulla */
+    background-size: cover; /* skaalaa kuvan niin, että se peittää koko alueen */
+    overflow-y: scroll; /* tekee sen, että scrollauspalkki on sivulla aina, vaikka scrollattavaa ei olisikaan */
+}
+
+main {
+    background-color: rgb(253, 253, 253);
+    padding: 1rem; /* 16px */
+}
+
+footer {
+    background-color: rgb(12, 99, 121);
+    color:rgb(247, 247, 247);
+    text-align: center;
+    padding: 1rem;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Roboto Slab', serif;
+    color: rgb(8, 52, 65);
+}
+
+a {
+    color: rgb(15, 134, 163);
+    text-decoration: none; /* ottaa linkin alaviivan pois */
+}
+
+a:hover {
+    color: rgb(10, 88, 107);
+    text-decoration: underline;
+}
+
+nav {
+    background-color: rgb(15, 108, 131);
+}
+
+/* Yhdistelmävalitsin, valitaan navigointikentän sisällä oleva lista */
+nav ul {
+    display: flex; /* tekee sen, että listan itemit ovat vierekkäin eivätkä allekkain */
+    justify-content: center; /* keskittää listan otsikot niin, että ne ovat keskellä ja välit ovat tasaisia */
+    list-style-type: none; /* poistaa listan pallurat */
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    color:rgb(247, 247, 247);
+    text-transform: uppercase;
+    padding: 1rem 1.5rem; /* 1rem on ylös + alas, 1.5rem vasen + oikea */
+    border-right: 1px solid rgb(17, 134, 163);
+}
+
+nav ul li:first-child a {
+    border-left: 1px solid rgb(17, 134, 163);
+} /* viittaa a-elementtiin, joka on ensimmäinen lapsi (Etusivu) navigointilistan sisällä */ 
+
+nav ul li a:hover {
+    color:rgb(240, 240, 240);
+    background-color: rgb(17, 134, 163);
+    text-decoration: none;
+}
+
+figure {
+    margin: 2rem 0;;
+}
+
+figcaption {
+    font-style: italic;
+    color: rgb(78, 78, 78);
+}
+
+fieldset {
+    padding: 1rem;
+    border: 1px solid rgb(197, 197, 197);
+    border-radius: .25rem;
+}
+
+legend {
+    color: rgb(12, 99, 121);
+    font-weight: bold;
+}
+
+input[type="text"], /* tämän avulla tyylitys vaikuttaa vain input osioihin joissa tyyppi on teksti */
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+    width: 100%;
+    padding: .75rem;
+    border: 1px solid rgb(207, 207, 207);
+    border-radius: .25rem; /* pyöristää reunoja */
+}
+
+button {
+    background-color: rgb(12, 99, 121);
+    color: rgb(247, 247, 247);
+    font-weight: bold;
+    padding: .75rem 1.25rem;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(17, 134, 163);
+}
+
+/* Luokat valitaan pisteellä */
+.container {
+    /* max-width tekee sen, että maksimissa containerin leveys on 800px, jos tilaa on vähemmän niin container kutistuu ikkunan koon mukana */
+    max-width: 800px;
+    /* tekee sen, että container on keskellä ja molemmilla puolilla on saman verran tyhjää tilaa */
+    margin: 0 auto;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between; /* tekee sen, että ylim. 10% jää col-left ja col-right väliin */
+}
+
+.col-left {
+    width: 60%;
+}
+
+.col-right {
+    width: 35%; /* tämä oli aiemmin 30%, mutta kun siihen lisätään padding-left 5% niin saadaan 35% kokonaisleveys */
+    padding-left: 5%;
+    border-left: 1px dashed rgb(219, 219, 219);
+}
+
+.img-right {
+    float: right; /* kuva leijuu tekstin oikealla puolella */
+    margin-left: 1.25rem;
+}
+
+.my-table {
+    width: 100%; /* tekee taulukon niin leveäksi kuin mahdollista */
+    border-spacing: 0; /* Tekee sen, että solut ovat toisissaan kiinni. Oletuksena solujen välillä on hyvin pieni rako */
+}
+
+.my-table th {
+    background-color: rgb(11, 82, 100);
+    color: rgb(250, 250, 250);
+    text-align: left;
+    padding: .5rem;
+}
+
+.my-table td {
+    padding: .5rem;
+    border-bottom: 1px solid rgb(207, 207, 207);
+}
+
+.my-table th:last-child,
+.my-table td:last-child {
+    text-align: right; /* asettaa Ikä-sarakkeen sekä Ikä-otsikon sisällön oikeaan reunaan (koska th:last-child ja td:last-child */
+}
+
+.my-table tr:nth-child(even) {
+    background-color: rgb(252, 252, 252);
+}
+
+.my-table tr:nth-child(odd) {
+    background-color: rgb(247, 247, 247);
+}
+
+.iframe-video {
+    width: 100%;
+    height: 432px;
+    border: none;
+}
+
+.iframe-video-vimeo {
+    border: none;
+}
+
+#logo {
+    background-image: url('../images/logo.png'); /* logoissa käytetään yleisesti svg-tiedostotyyppiä */
+    display: block;
+    width: 286px; /* leveys laitettu samaksi kuin kuvatiedoston leveys */
+    height: 60px; /* korkeus laitettu samaksi kuin kuvatiedoston korkeus */
+    text-indent: 100%; /* teksti lähtee elementin oikealta ulkopuolelta */
+    white-space: nowrap; /* teksti ei rivity */
+    overflow: hidden; /* elementin sisältö, joka menee elementin ulkopuolelle piilottuu */
+    margin-bottom: 5px;
+}
