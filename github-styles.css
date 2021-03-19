@@ -1,122 +1,104 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
-    background-color: #fcfcfc;
+    background-color: #ebebeb;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-image: url("https://raw.githubusercontent.com/kisuski/kisuski.github.io/main/media/black-cat-is-curious-4134140_1280111.png");
     background-repeat: no-repeat;
     background-size: 135px;
+    overflow-y: scroll; /* tekee sen, että scrollauspalkki on sivulla aina, vaikka scrollattavaa ei olisikaan */
 
 }
 
-h1 {
+main {
+    background-color: rgb(247, 247, 247);
+    padding: 1rem; /* 16px */
+}
+
+h1, h2, h3 {
     color: #23292E;
     text-align: center;
     font-family: 'Over the Rainbow', Garamond;
-    font-size: 300%;
-    padding: 40px;
 }
-
-* {box-sizing: border-box}
 
 /* Navigointi-menun tyyli */
-.navbar {
-    width: 100%;
+nav {
     background-color:#6C91C2;
-    overflow: auto;
-  }
-  
-  /* Navigaatio linkit */
-  .navbar a {
-    float: left;
-    padding: 11px;
-    color: #23292E;
+}
+
+/* Yhdistelmävalitsin, valitaan navigointikentän sisällä oleva lista */
+nav ul {
+    display: flex; /* tekee sen, että listan itemit ovat vierekkäin eivätkä allekkain */
+    justify-content: center; /* keskittää listan otsikot niin, että ne ovat keskellä ja välit ovat tasaisia */
+    list-style-type: none; /* poistaa listan pallurat */
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    text-transform: uppercase;
+    padding: 1rem 1.5rem; /* 1rem on ylös + alas, 1.5rem vasen + oikea */
+    border-right: 1px solid #81ade7;
+}
+
+nav ul li:first-child a {
+    border-left: 1px solid #81ade7;
+} /* viittaa a-elementtiin, joka on ensimmäinen lapsi (Etusivu) navigointilistan sisällä */ 
+
+nav ul li a:hover {
+    background-color: #81ade7;
     text-decoration: none;
-    font-family: Verdana;
-    font-size: 17px;
-    width: 33.33%; /* Tämä tarkoittaa sitä, että linkkien välit ovat samat. Jos kaksi linkkiä, käytä 50%, 33.33% kolmelle linkille jne... */
-    text-align: center; /* Keskitetty teksti */
-  }
+}
   
-  /* Taustaväri kun hiiri on yllä */
-  .navbar a:hover {
+/* Navigaatio linkit */
+nav a {
+    color: #f5f5f5;
+    text-decoration: none;
+}
+  
+/* Taustaväri kun hiiri on yllä */
+nav a:hover {
     background-color: #81ade7;
-    color: #23292E;
     transition: 0.5s;
-  }
+}
   
-  /* Aktiivisen linkin tyyli */
-  .navbar a.active {
+/* Aktiivisen linkin tyyli */
+nav a.active {
     background-color: #81ade7;
-  }
-
-h3 {
-    color: #23292E;
-    text-align: center;
-    font-family:'Segoe UI';
-    height: 40px;
-}
-
-p {
-    color: #23292E;
-    text-align: center;
-    font-family: Verdana;
-    font-size: 100%;
-}
-
-.etusivuteksti {
-    margin-left: auto;
-    margin-right: auto;
-    width: 70%;
-    padding-top: 70px;
-    padding-bottom: 150px;
-}
-
-.projektilista {
-    margin-left: auto;
-    margin-right: auto;
-    width: 70%;
-    padding-top: 70px;
-    padding-bottom: 150px;
-}
-
-.minusta {
-    margin-left: auto;
-    margin-right: auto;
-    width: 70%;
-    padding-top: 70px;
-    padding-bottom: 150px;
 }
 
 a {
-    color: #23292E;
+    color: #292c2e;
     text-decoration: none;
     font-weight: bold;
 }
 
-a:visited {
-    color: #23292E;
-}
-
 a:hover {
-    color: #fcfcfc;
+    color: rgb(247, 247, 247);
     transition: 0.3s;
 }
 
-.footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
+ footer {
     width: 100%;
     background-color: #6C91C2;
     text-align: center;
- }
+    padding: 1rem;
+}
 
- .footer a {
-    color: #23292E;
- }
+footer a {
+    color: #292c2e;
+}
 
- .footer a:hover {
+footer a:hover {
     color: #6C91C2;
- }
+}
 
- #yhteystiedot {
-    color: #23292E;
- }
+.container {
+    /* max-width tekee sen, että maksimissa containerin leveys on 800px, jos tilaa on vähemmän niin container kutistuu ikkunan koon mukana */
+    max-width: 1000px;
+    /* tekee sen, että container on keskellä ja molemmilla puolilla on saman verran tyhjää tilaa */
+    margin: 0 auto;
+}
