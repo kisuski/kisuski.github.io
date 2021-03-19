@@ -1,39 +1,52 @@
 <!DOCTYPE html>
 <html lang="fi">
 <head>
-    <meta name="keywords" content="portfolio, ohjelmistokehittäjä, opiskelija">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>kisuski - Etusivu</title>
-
+    <title>Projektit - kisuski</title>
+    
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Over+the+Rainbow&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="github-styles.css">
 </head>
+
 <body>
+
+    <div class="container"> <!-- Laitetaan koko body containerin sisään, jotta CSS-tiedostossa voidaan muokata koko bodyn tyyliä containerin avulla -->
+
     <header>
+        <!-- sivun otsikko -->
         <h1>Minusta</h1>
+
+        <!-- Navigaatio -->
+        <nav>
+            <ul>
+                <li><a href="github-index.html">Etusivu</a></li>
+                <li><a href="projektit.html">Projektit</a></li>
+                <li><a class="active" href="minusta.html">Minusta</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <!-- Navigaatio -->
-<div class="navbar">
-    <a href="index.html">Etusivu</a>
-    <a href="projektit.html">Projektit</a>
-    <a class="active" href="minusta.html">Minusta</a>
-  </div>
 
-  <div class="minusta">
-      <p>Olen 25-vuotias helsinkiläinen nuori nainen, joka opiskelee Front-End Ohjelmistokehittäjäksi. Aloitin opintoni syksyllä 2020 ja valmistun syksyllä 2022.
-          Pidän itseäni luovana ja kekseliäänä ihmisenä, tykkään myös ratkaista ongelmia. Musiikki ja kissat ovat lähellä sydäntäni.
-      </p>
-  </div>
+    <main>
 
-  <div class="footer">
-    <p id="yhteystiedot">Yhteystiedot:</p>
-    <p><a href="mailto:susanna.moisio@edu.taitotalo.fi">susanna.moisio@edu.taitotalo.fi</a></p>
-    <p><a href="https://www.linkedin.com/in/susanna-moisio-486392204/" target="_blank">LinkedIn</a></p>
-</div>
+        <!-- sisällön otsikko -->
+        <h2>Tietoa</h2>
+
+            <p>Olen 25-vuotias helsinkiläinen nuori nainen, joka opiskelee Front-End Ohjelmistokehittäjäksi. Aloitin opintoni syksyllä 2020 ja valmistun syksyllä 2022. Pidän itseäni luovana ja kekseliäänä ihmisenä, tykkään myös ratkaista ongelmia. Musiikki ja kissat ovat lähellä sydäntäni.
+            </p>
+    </main>
+
+    <footer>
+        <a href="mailto:susanna.moisio@edu.taitotalo.fi">Email</a><br>
+        <a href="https://www.linkedin.com/in/susanna-moisio-486392204/" target="_blank">LinkedIn</a><br><br>
+
+         <!-- &copy; luo Copyright-merkin -->
+         &copy; 2021 Susanna M
+    </footer>
+
+    </div> <!-- /.container -->
 </body>
 </html>
-  
