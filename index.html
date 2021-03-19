@@ -1,35 +1,51 @@
 <!DOCTYPE html>
 <html lang="fi">
 <head>
-    <meta name="keywords" content="portfolio, ohjelmistokehittäjä, opiskelija">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>kisuski - Etusivu</title>
-
+    <title>Projektit - kisuski</title>
+    
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Over+the+Rainbow&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="github-styles.css">
 </head>
+
 <body>
+
+    <div class="container"> <!-- Laitetaan koko body containerin sisään, jotta CSS-tiedostossa voidaan muokata koko bodyn tyyliä containerin avulla -->
+
     <header>
-        <h1>Susannan portfolio</h1>
+        <!-- sivun otsikko -->
+        <h1>Etusivu</h1>
+
+        <!-- Navigaatio -->
+        <nav>
+            <ul>
+                <li><a class="active" href="index.html">Etusivu</a></li>
+                <li><a href="projektit.html">Projektit</a></li>
+                <li><a href="minusta.html">Minusta</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <!-- Navigaatio -->
-<div class="navbar">
-    <a class="active" href="index.html">Etusivu</a>
-    <a href="projektit.html">Projektit</a>
-    <a href="minusta.html">Minusta</a>
-  </div>
-  
-  <div class="etusivuteksti">
-      <p>Tervetuloa minun maailmaani. Täältä löydät tietoa minun projekteistani sekä tietoa minusta. Alhaalta löytyy yhteystietoni. Olen tällä hetkellä etsimässä itselleni työssäoppimispaikkaa, joten jos kiinnostut minusta, otathan yhteyttä.</p>
-  </div>
-  <div class="footer">
-        <p id="yhteystiedot">Yhteystiedot:</p>
-        <p><a href="mailto:susanna.moisio@edu.taitotalo.fi">susanna.moisio@edu.taitotalo.fi</a></p>
-        <p><a href="https://www.linkedin.com/in/susanna-moisio-486392204/" target="_blank">LinkedIn</a></p>
-    </div>
+
+    <main>
+
+        <!-- sisällön otsikko -->
+        <h2>Heipä hei</h2>
+
+        <p>Tervetuloa minun maailmaani. Täältä löydät tietoa minun projekteistani sekä tietoa minusta. Alhaalta löytyy yhteystietoni. Olen tällä hetkellä etsimässä itselleni työssäoppimispaikkaa, joten jos kiinnostut minusta, otathan yhteyttä.</p>
+    </main>
+
+    <footer>
+        <a href="mailto:susanna.moisio@edu.taitotalo.fi">Email</a><br>
+        <a href="https://www.linkedin.com/in/susanna-moisio-486392204/" target="_blank">LinkedIn</a><br><br>
+
+         <!-- &copy; luo Copyright-merkin -->
+         &copy; 2021 Susanna M
+    </footer>
+
+    </div> <!-- /.container -->
 </body>
 </html>
