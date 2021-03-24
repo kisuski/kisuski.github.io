@@ -3,6 +3,7 @@
 }
 
 body {
+    margin: 0; /* body automatically has a small margin so this puts it to zero */
     background-color: #ebebeb;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-image: url("https://raw.githubusercontent.com/kisuski/kisuski.github.io/main/media/black-cat-is-curious-4134140_1280111.png");
@@ -25,6 +26,7 @@ h1, h2, h3 {
 
 /* Navigointi-menun tyyli */
 nav {
+    margin-top: 3rem; /* blocks the cat from getting covered with the navigation bar */
     background-color:#6C91C2;
 }
 
