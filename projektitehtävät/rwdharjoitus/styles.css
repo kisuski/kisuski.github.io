@@ -112,7 +112,7 @@ figcaption {
     position: relative;
     height: 0;
     background-color: #222;
-    background-image: url('../images/img-main.jpg');
+    background-image: url('media/img-main.jpg');
     background-size: cover; /* kuva peittää koko elementin eli kuva näkyy paremmin */
     background-position: center; /* rajautuminen siistimpi/keskitetty */
     padding-top: 100%; /* padding-top 100% tekee elementistä yhtä leveän kuin bodyn leveys (isäntäelementti) */
@@ -215,7 +215,7 @@ figcaption {
 }
 
 #menuBtn {
-    background-image: url('../images/icon-menu.svg');
+    background-image: url('media/icon-menu.svg');
     margin-right: 1rem; /* 1rem/16px irti oikeasta reunasta */
     transition: opacity .5s, transform .5s;
 }
@@ -235,7 +235,7 @@ figcaption {
     position: absolute;
     top: 1rem;
     right: 1rem; /* absolute, 1rem ja 1,rem siirretään Close menu-button oikeaan yläreunaan samalla tavalla kuin menu-nappula */
-    background-image: url('../images/icon-close.svg');
+    background-image: url('media/icon-close.svg');
 }
 
 /* Tyylit näkymille, joiden leveys on vähintään 480px */
