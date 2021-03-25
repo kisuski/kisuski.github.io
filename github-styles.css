@@ -28,6 +28,7 @@ h1, h2, h3 {
 nav {
     margin-top: 3rem; /* blocks the cat from getting covered with the navigation bar */
     background-color:#6C91C2;
+    transition: 0.5s;
 }
 
 /* Yhdistelmävalitsin, valitaan navigointikentän sisällä oleva lista */
@@ -64,7 +65,6 @@ nav a {
 /* Taustaväri kun hiiri on yllä */
 nav a:hover {
     background-color: #81ade7;
-    transition: 0.5s;
 }
   
 /* Aktiivisen linkin tyyli */
@@ -76,11 +76,11 @@ a {
     color: #292c2e;
     text-decoration: none;
     font-weight: bold;
+    transition: 0.3s;
 }
 
 a:hover {
     color: rgb(247, 247, 247);
-    transition: 0.3s;
 }
 
  footer {
