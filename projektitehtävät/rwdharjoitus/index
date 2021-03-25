@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Responsiivinen harjoitus</title>
+    <link rel="stylesheet" href="rwdstyles.css">
+</head>
+<body>
+
+    <header>
+
+        <div class="container">
+            <img src="media/docendo-discimus.svg" id="logo" alt="Docendo Discimus">
+            <button type="button" id="menuBtn" class="hidden-desktop">Menu</button>
+        </div> <!-- /.container -->
+
+        <nav id="menu"> <!-- lisätään naville id, jotta scriptissä on helpompi viitata navbariin -->
+            <button type="button" id="closeMenuBtn" class="hidden-desktop">Close menu</button> <!-- luodaan sulje menu-nappula itse navigaatiokenttään, jotta se on näkyvillä kun navigaatiokenttä aukeaa -->
+            <ul>
+                <li><a href="#">Main</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Prices</a></li>
+                <li><a href="#">Our story</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="img-main">
+        <h1>Tässä on joku nostoteksti</h1>
+    </div>
+
+    <div class="container">
+        <main>
+        
+            <h1>Responsiivinen harjoitus</h1>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non amet iure totam consectetur quam dicta quasi atque asperiores, dolores eos dolorum quas, itaque, soluta libero ipsa. Tenetur architecto eveniet nisi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, aliquam quae. Animi eos quo inventore explicabo voluptatum quos nulla tempora labore voluptates quam consequuntur quas a corrupti, ut mollitia neque.</p>
+
+            <div class="alert hidden-mobile"> <!-- voi antaa kerralla useamman luokan, luokat erotellaan välilyönnillä -->
+                Tässä on alert-boksi. Tämä boksi näkyy vain leveällä näkymällä.
+            </div>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ratione iure quibusdam ut sunt, harum ipsum similique magni id repellat quos voluptatum tempora optio veritatis alias possimus, sequi maxime sint? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit minima aperiam distinctio consectetur obcaecati ut labore quas sed, neque ratione exercitationem, alias necessitatibus laudantium atque accusantium. Omnis velit doloribus maiores.</p>
+
+            <p>
+                <!-- nappula joka avaa modaalin -->
+                <button type="button" id="openModalBtn">Avaa modaali</button>
+            </p>
+
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis dicta dignissimos voluptatem in? Quaerat eum, voluptatem accusantium reprehenderit repudiandae nulla, quia temporibus explicabo illo unde veniam est obcaecati nihil officia!</p>
+
+            <div class="alert hidden-desktop">
+                Tämä alert-boksi näkyy vain mobiilissa.
+            </div>
+
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis maxime neque, amet repudiandae tempora temporibus voluptatibus optio aut unde, magni quia impedit autem nesciunt aperiam fugiat laborum alias nisi porro. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt minima ex minus numquam ratione distinctio dolorem dicta cumque error incidunt ab, voluptates sapiente repellat temporibus, quia velit porro, rerum sint.</p>
+
+            <h2>Kuva</h2>
+
+            <img src="media/img-main.jpg" alt="Testikuva">
+
+            <h2>Rinnakkaiset palstat</h2>
+
+            <p>Kolme rinnakkaista yhtä leveää palstaa. Mobiilissa menevät allekkain.</p>
+
+            <div class="flex-container">
+
+                <div class="col-1-3"> <!-- 1/3 alue -->
+                    <figure>
+                        <img src="media/test-img-1.jpg" alt="Test img 1">
+                        <figcaption>Tässä on kuvateksti.</figcaption>
+                    </figure>
+                </div> <!-- /.col-1-3 -->
+
+                <div class="col-1-3"> 
+                    <figure>
+                        <img src="media/test-img-2.jpg" alt="Test img 2">
+                        <figcaption>Tokan kuvan teksti.</figcaption>
+                    </figure>
+                </div> <!-- /.col-1-3 -->
+
+                <div class="col-1-3">
+                    <figure>
+                        <img src="media/test-img-3.jpg" alt="Test img 3">
+                        <figcaption>Kolmas kuvateksti.</figcaption>
+                    </figure>
+                </div> <!-- /.col-1-3 -->
+
+            </div> <!-- /.flex-container -->
+
+
+            <p>Kaksi rinnakkaista palstaa, joista ensimmäinen on 2/3 leveä ja jälkimmäinen 1/3 leveä. Mobiilissa menevät allekkain.</p>
+
+            <div class="flex-container">
+
+                <div class="col-2-3">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis eum, sint asperiores accusantium aliquam, cum laboriosam non quae est voluptatem velit corrupti commodi, delectus quam fuga similique et sunt. Suscipit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid ipsum quibusdam facere obcaecati repellat? Itaque id beatae blanditiis quod quis expedita dolores, nisi eum modi atque ad cum! Impedit, at?</p>
+                </div>
+
+                <div class="col-1-3">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor ratione vel autem doloribus, sunt consequuntur debitis, commodi magni cumque vero aut omnis ab quaerat harum ipsa quisquam. Deleniti, molestiae animi.</p>
+                </div>
+
+            </div>
+
+            <div class="flex-container images">
+
+                <img src="media/test-img-4.jpg" alt="Test img 4">
+                <img src="media/test-img-5.jpg" alt="Test img 5">
+                <img src="media/test-img-6.jpg" alt="Test img 6">
+                <img src="media/test-img-7.jpg" alt="Test img 7">
+
+            </div> <!-- /.flex-container images -->
+
+        </main>
+
+    </div> <!-- /.container -->
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <h2>Tässä on modaali</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga sequi sint qui suscipit autem architecto quos voluptas, ipsa earum officia, quis cupiditate. Libero molestiae expedita soluta laborum necessitatibus aliquam aperiam.</p>
+            <p>
+                <button type="button" id="closeModalBtn">Sulje modaali</button>
+            </p>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2021 Sussu
+    </footer>
+    
+    <script src="js/common.js"></script> <!-- scriptin linkkaus aina bodyn loppuun -->
+</body>
+</html>
