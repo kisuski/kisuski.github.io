@@ -1,0 +1,96 @@
+body {
+    background-color: #0c0e0f;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.25; /* muutetaan riviväliä, jotta se täsmää enemmän leiskan kanssa */
+}
+
+h1,h2,h3 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: #ee293d;
+}
+
+a {
+    text-decoration: none;
+    color: #1a5dad;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* tekee kuvista responsiiviset */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+footer a,
+footer a:hover {
+    color: #fff; /* footerin linkit valkoisiksi */
+}
+
+.container-fluid {
+    max-width: 1110px; /* leiskan mukainen mitoitus, helpottaa lukemista sillä teksti ei mene aivan laidasta laitaan */
+}
+
+/* pätee elementtiin .nav-link, joka on .navbar-nav sisällä */
+.navbar-nav .nav-link {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.125rem; /* 18px */
+    text-transform: uppercase;
+}
+
+.nav-link:hover {
+    text-decoration: none;
+}
+
+.bg-primary {
+    background-color: #1a5dad !important; /* perään täytyy kirjoittaa !important, sillä bootstrapin koodissa primary värissä on myös !important */
+}
+
+.btn {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    border-radius: 0; /* nurkat teräviksi, sillä bootstrapissa automaattisesti pieni reunien pehmennys */
+}
+
+.btn:hover {
+    text-decoration: none; /* nappulat eivät tarvitse alleviivausta kun hiiri viedään nappulan päälle */
+}
+
+.btn-primary {
+    background-color: #1a5dad;
+    border-color: #1a5dad; /* bootstrapissa nappulalla oli valmiiksi reunaväri, joten sekin tulee ottaa huomioon */
+}
+
+.form-control {
+    border: none; /* reunaviiva pois */
+    border-radius: 0;
+}
+
+/* keskitetään karusellin teksti */
+.carousel-caption {
+    top: 50%;
+    bottom: auto;
+    transform: translateY(-50%);
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.25rem; /* 36px */
+    text-shadow: 0 0 10px #000; /* x ja y koordinaatit, varjon koko, varjon väri */
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%; /* tekee neliöistä pallon */
+}
+
+.logo {
+    background-image: url('../images/space-oddity.svg');
+    background-repeat: no-repeat;
+    width: 350px;
+    height: 62px;
+    margin: 0; /* bootstrapissa h1-otsikolla on automaattisesti 0.5rem margin-bottomia */
+}
