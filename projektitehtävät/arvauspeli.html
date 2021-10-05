@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arvauspeli</title>
+
+    <style>
+        body {
+            margin: 0;
+            background-color: rgb(43, 43, 43);
+            color: rgb(250, 250, 250);
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        button {
+            display: block;
+            margin: 6px 0 6px 0;
+            border-radius: 6px;
+            border: none;
+            padding: 6px;
+            background-color: rgb(247, 212, 212);
+            font-weight: bold;
+            
+        }
+
+        input {
+            padding: 6px;
+            border-radius: 6px;
+        }
+
+        .container {
+            width: fit-content;
+            padding: 1rem;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <button id="ekaNappi">Arvo uusi numero</button>
+        <input type="text" id="lue" placeholder="Arvaa väliltä 0-100">
+        <button id="tokaNappi">Testaa</button>
+        <p id="vastaus">Tähän tulee vastaus</p>
+    </div>
+</body>
+
+<script>
+    //Yleismuuttujat
+    let arvottuNumero;
+    // Muuttuja ymmärtää, että arvo on numero, siksi sinne laitetaan 0
+    let kuinkaMonesKerta = 0;
+
+    // Elementtien kaappaus
+    const nappiYksi = document.querySelector("#ekaNappi");
+    const nappiKaksi = document.querySelector("#tokaNappi");
+    const vastausAlue = document.querySelector("#vastaus");
+    const lueArvo = document.querySelector("#lue");
+
+    // Luodaan kuuntelijat
+    nappiYksi.addEventListener("click", arvonta);
+    nappiKaksi.addEventListener("click", tarkistus);
+
+    // Arvontafunktio, joka arpoo uuden luvun välillä 0-100
+    // Math.floor pyöristää luvun aina alaspäin, Math.round pyöristää lähimpään kokonaislukuun
+    function arvonta() {
+        kuinkaMonesKerta = 0;
+        let arvo = Math.round(Math.random() * 100);
+        console.log(`Arvottu luku on ${arvo}`);
+        arvottuNumero = arvo;
+    }
+
+    // Tarkistusfunktio, joka tarkistaa tuloksen ja kirjoittaa sen verkkosivuun
+    function tarkistus() {
+        let kayttajanArvaus = lueArvo.value;
+        let tulos;
+        kuinkaMonesKerta++;
+
+        if (kayttajanArvaus > arvottuNumero) {
+            tulos = "Arvasit liian suuren numeron.";
+        } 
+        
+        else if (kayttajanArvaus < arvottuNumero) {
+            tulos = "Arvasit liian pienen numeron."
+        }
+
+        else if (kayttajanArvaus == arvottuNumero) {
+            tulos = "Arvasit oikein!";
+        }
+        
+        else {
+            tulos ="Jotain meni pieleen.";
+        }
+
+        vastausAlue.innerHTML = tulos + " Arvasit " + kuinkaMonesKerta + ". kerran.";
+    }
+</script>
+</html>
