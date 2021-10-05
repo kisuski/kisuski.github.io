@@ -1,0 +1,63 @@
+body {
+    background-color: #fcfdec;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+} 
+
+footer a,
+footer a:hover {
+    color: rgb(0, 0, 0);
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.navbar-nav .nav-link {
+    text-transform: uppercase;
+}
+
+.bg-light {
+    background-color: #fcfdec !important;
+}
+
+.bg-success {
+    background-color: #7b8b48 !important;
+}
+
+.container-fluid {
+    max-width: 1110px; /* Helpottaa lukemista, sillä teksti ei kulje täysin laidasta laitaan */
+}
+
+
+/* Keskitetään karusellin teksti */
+.carousel-caption {
+    top: 50%;
+    bottom: auto;
+    transform: translateY(-50%);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.25rem; /* 20px */
+    text-shadow: 0 0 10px #000; /* x ja y koordinaatit, varjon koko, varjon väri */
+}
+
+@media (max-width: 767.98px) {
+    footer ul li {
+        display: none;
+    }
+
+    footer h2 {
+        display: none;
+    }
+
+    footer {
+        text-align: center;
+    }
+ }
