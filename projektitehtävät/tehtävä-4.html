@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tehtävä 4</title>
+    <style>
+        body {
+            background-color: rgb(43, 43, 43);
+            color: rgb(255, 255, 255);
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        input {
+            border-radius: 0.5rem;
+            padding: 0.5rem;
+            margin-top: 1rem;
+        }
+
+        button {
+            display: block;
+            margin-top: 1rem;
+            border-radius: 0.75rem;
+            border: none;
+            padding: 0.75rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 1s;
+        }
+
+        button:hover {
+            background-color: rgb(197, 197, 197);
+        }
+    </style>
+</head>
+<body>
+    <h1>Tulostetaan käyttäjälle luvun kertotaulu</h1>
+    <input type="text" id="luku" placeholder="esim. 8">
+    <p id="laskelma">Kertotaulu on...</p>
+    <button id="btn">Laske</button>
+
+    <script>
+        
+        // Otetaan kaikki elementit talteen mitä tarvitaan
+        const kentta = document.getElementById("luku");
+        const vastausAlue = document.getElementById("laskelma");
+        const nappi = document.getElementById("btn");
+
+        // Kuunnellaan, mikä luku on annettu kun nappia painetaan
+        nappi.addEventListener("click", lueLuku);
+
+        // Funktio, joka lukee luvun ja käynnistää kertotaulufunktion
+        function lueLuku() {
+            let arvo = kentta.value;
+            let tulos = kertotaulu(arvo);
+            // Kirjoitetaan tulos verkkosivuun
+            vastausAlue.innerHTML = tulos;
+        }
+
+        // Funktio, joka rakentaa kertotaulun. Palauttaa koko kertotaulun merkkijonona
+        function kertotaulu(luku) {
+            let tulos = "";
+            for(let i = 0; i < 11; i++) {
+                tulos += i*luku+" ";
+            }
+            return tulos;
+        }
+    </script>
+</body>
+</html>
