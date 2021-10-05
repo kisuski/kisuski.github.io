@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Päivä 8, tehtävä 3</title>
+</head>
+<body>
+
+    <button id="btn">Klikkaa tästä</button><br>
+    <p id="vastaus"></p>
+
+    <script>
+        const vastausAlue = document.querySelector("#vastaus");
+        const nappi = document.querySelector("#btn");
+
+        // Kuunnellaan nappia
+        nappi.addEventListener("click", silmukkaLuku);
+        
+        function silmukkaLuku() {
+            
+            for (let i = 1; i <= 10; i++) {
+                // Kasvatetaan tulostusta aina viidellä pikselillä
+                // += tuo kaikki rivit näkyviin, pelkkä = näyttäisi vain yhden rivin
+                vastausAlue.innerHTML += `<p style="font-size: ${0+i*5}px">Tässä on luku ${i}.</p>`
+            }
+        }
+    </script>
+</body>
+</html>
